@@ -5208,7 +5208,9 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 
 .btn { -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; display: block; font-family: "Open Sans"; cursor: pointer; background-color: transparent; border: none; -webkit-appearance: none; }
 
-.btn--evel { background: #1B65B9; -webkit-border-radius: 8px; border-radius: 8px; max-width: 23rem; width: 100%; text-align: center; padding: 2.1rem 0; font-weight: 700; font-size: 1.8rem; color: #fff; }
+.btn--evel { background: #1B65B9; -webkit-border-radius: 8px; border-radius: 8px; max-width: 23rem; width: 100%; text-align: center; padding: 1.9rem 0; font-weight: 700; font-size: 1.8rem; border: 2px solid #1B65B9; color: #fff; }
+
+.btn--evel:hover { background: #fff; color: #1B65B9; }
 
 .btn--call { background: #1B65B9; -webkit-border-radius: 8px; border-radius: 8px; max-width: 20rem; border: 2px solid #FFFFFF; width: 100%; text-align: center; padding: 1.3rem 0; font-weight: 700; font-size: 1.3rem; color: #fff; }
 
@@ -5304,13 +5306,15 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 
 .datepicker--cell.-current- { color: #1B65B9; font-weight: 400; }
 
+.datepicker--cell.-focus- { background: #d9d9d9; color: #231F20; }
+
 .datepicker--cell.-selected- { border: 3px solid #1B65B9; -webkit-border-radius: 50%; border-radius: 50%; background: transparent; color: #1B65B9; font-size: 1.6rem; font-weight: 700; }
 
 .datepicker--cell.-selected-.datepicker--cell-day.-other-month-, .datepicker--cell.-selected- .-selected-.datepicker--cell-year.-other-decade- { background: transparent; color: #1B65B9; font-weight: 700; opacity: .8; }
 
 .datepicker--cell.-selected-.-current- { background: transparent; color: #1B65B9; font-size: 1.6rem; font-weight: 700; }
 
-.datepicker--cell.-selected-.-focus- { background: transparent; }
+.datepicker--cell.-selected-.-focus- { background: transparent; color: #1B65B9; }
 
 .datepicker--day-name { color: #5B636A; mix-blend-mode: normal; font-weight: 700; }
 
