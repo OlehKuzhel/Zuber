@@ -5100,6 +5100,8 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 
 .title.bl { font-weight: 700; }
 
+.title--link { display: block; }
+
 .paragraph { color: #231F20; font-size: 1.8rem; line-height: 1; font-weight: 400; }
 
 .paragraph.lg { font-weight: 300; }
@@ -5113,6 +5115,8 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 .paragraph.sm { font-size: 1.6rem; }
 
 .paragraph.big { font-size: 2.4rem; }
+
+.paragraph--exert { line-height: 3rem; }
 
 .c1 { color: #231F20; }
 
@@ -5519,6 +5523,28 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 .section-about { padding-top: 6rem; padding-bottom: 21rem; min-height: 80vh; }
 
 .section-about .about { padding-top: 3rem; }
+
+.section-article { padding-top: 6rem; padding-bottom: 16rem; min-height: 80vh; }
+
+.section-article .article { padding-top: 3rem; }
+
+.section-article .article .title--h3 { margin-top: 1rem; }
+
+.section-article .article-content { padding-top: 3rem; }
+
+.section-article .article-content .paragraph { line-height: 3rem; }
+
+.section-article .article-content .paragraph + .paragraph { margin-top: 2.4rem; }
+
+.section-article .article-content .banner { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; padding: 6rem 0; }
+
+.section-article .article-recent { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; margin-top: 7rem; width: 100%; }
+
+.section-article .article-recent__item { max-width: 38.7rem; width: 100%; }
+
+.section-article .article-recent a { margin: 0 0 2rem 0; }
+
+.section-article .article-recent a img { margin-top: 3rem; width: 100%; height: 28.9rem; -webkit-border-radius: 13px; border-radius: 13px; -o-object-fit: cover; object-fit: cover; }
 
 .section-accept { padding-top: 6rem; padding-bottom: 16rem; min-height: 80vh; }
 
