@@ -34,7 +34,13 @@ $(document).ready(function($) {
       firstDay: 1
   };
 
-  $('select').styler();
+  $('select').styler({
+    onFormStyled: function() {
+      $('.jq-selectbox__dropdown ul').mCustomScrollbar({
+    theme:"dark"
+});
+    }
+  });
 
   $('.field').blur(function (event) {
         if ($(this).val() != '') {
