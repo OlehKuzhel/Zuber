@@ -5076,6 +5076,8 @@ body { -webkit-text-size-adjust: none; font-family: "Open Sans"; font-weight: 40
 
 body.bg-main { background: url(../img/pattern.png) no-repeat top 61rem center; -webkit-background-size: 168rem 345.5rem; background-size: 168rem 345.5rem; }
 
+body.bg-page { background: url(../img/pattern.png) no-repeat top center, #E5E5E5; -webkit-background-size: 168rem 345.5rem; background-size: 168rem 345.5rem; }
+
 p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 400; line-height: 1; margin: 0; }
 
 .text-left { text-align: left; }
@@ -5138,6 +5140,10 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 
 .modal { -webkit-overflow-scrolling: touch; }
 
+.page-header { max-width: 100%; width: 100%; }
+
+.page-header img { width: 100%; -webkit-border-radius: 16px; border-radius: 16px; height: auto; -o-object-fit: cover; object-fit: cover; }
+
 .link { display: block; font-family: "Open Sans"; position: relative; -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; }
 
 .link--banner { max-width: 59.5rem; width: 100%; }
@@ -5175,6 +5181,12 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 .link--footer:hover { text-decoration: underline; }
 
 .link--social { font-size: 1.8rem; color: #fff; }
+
+.link--breab { font-weight: 700; font-size: 1.6rem; color: #8296A5; }
+
+.link--breab.current { pointer-events: none; }
+
+.link--breab.home { color: #1B65B9; }
 
 .btn { -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; display: block; font-family: "Open Sans"; cursor: pointer; background-color: transparent; border: none; -webkit-appearance: none; }
 
@@ -5295,6 +5307,16 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 .datepicker--nav-title i { color: #fff; }
 
 .datepicker--nav-title:hover { background: rgba(255, 255, 255, 0.1); }
+
+.breabcrumbs { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; margin: 6rem 0 3rem 0; }
+
+.breabcrumbs .link { padding-right: 2rem; position: relative; }
+
+.breabcrumbs .link:not(:first-child) { padding-left: 2.5rem; }
+
+.breabcrumbs .link:last-child { padding-right: 0; }
+
+.breabcrumbs .link + .link:before { position: absolute; top: 0; left: 0; content: '/'; font-family: "Open Sans"; font-weight: 700; font-size: 1.6rem; color: #8296A5; }
 
 .section-header { background: #1B65B9; position: fixed; z-index: 10; top: 0; left: 0; width: 100%; }
 
@@ -5453,6 +5475,32 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 .section-footer .footer-links { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; height: 3rem; margin: 0; list-style: none; padding: 0; }
 
 .section-footer .footer-links li { height: 100%; line-height: 3rem; }
+
+.section-faq { padding-top: 6rem; padding-bottom: 21rem; min-height: 80vh; }
+
+.section-faq .faq { padding-top: 3rem; }
+
+.section-faq .faq-items { padding-top: 3rem; }
+
+.section-faq .faq-item { width: 100%; background: #fff; -webkit-border-radius: 13px; border-radius: 13px; margin-bottom: 3rem; padding-bottom: 3rem; }
+
+.section-faq .faq-item:last-child { margin-bottom: 0; }
+
+.section-faq .faq-item__head { padding: 3rem 4rem 0 3rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; cursor: pointer; }
+
+.section-faq .faq-item__head svg { -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; width: 1.2rem; height: .8rem; display: block; margin-top: 1.15rem; }
+
+.section-faq .faq-item__head svg path { fill: #1B65B9; }
+
+.section-faq .faq-item__head h3 { -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; max-width: 107rem; width: 100%; line-height: 3rem; }
+
+.section-faq .faq-item__content { padding: 1rem 4rem 0 3rem; max-width: 107rem; width: 100%; display: none; }
+
+.section-faq .faq-item__content .paragraph { line-height: 3rem; }
+
+.section-faq .faq-item:first-child .faq-item__content { display: block; }
+
+.section-faq .faq-item.active svg { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
 
 .form-row { position: relative; }
 

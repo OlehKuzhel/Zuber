@@ -127,6 +127,16 @@ $(document).ready(function($) {
         }
     });
 
+    $('.faq-item__head').on('click', function(event) {
+        event.preventDefault();
+        $parentThis = $(this).parent()
+        $contentThis = $parentThis.find('.faq-item__content')
+        $parentThis.toggleClass('active').siblings().removeClass('active');
+        $('.faq-item__head').not(this).parent().find('.faq-item__content').slideUp();
+        $contentThis.find('p').addClass('animated slow fadeIn');
+        $contentThis.slideToggle()
+    });
+
   //   var sliderB = new Swiper('.get-items', {
   //       speed: 800,
   //       slidesPerView: 3,
