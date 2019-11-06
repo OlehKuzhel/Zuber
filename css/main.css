@@ -5076,7 +5076,7 @@ body { -webkit-text-size-adjust: none; font-family: "Open Sans"; font-weight: 40
 
 body.bg-main { background: url(../img/pattern.png) no-repeat top 61rem center; -webkit-background-size: 168rem 345.5rem; background-size: 168rem 345.5rem; }
 
-body.bg-page { background: url(../img/pattern.png) no-repeat top center, #E5E5E5; -webkit-background-size: 168rem 345.5rem; background-size: 168rem 345.5rem; }
+body.bg-page { background: url(../img/pattern.png) no-repeat top center, #fff; -webkit-background-size: 168rem 345.5rem; background-size: 168rem 345.5rem; }
 
 p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 400; line-height: 1; margin: 0; }
 
