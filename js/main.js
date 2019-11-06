@@ -137,6 +137,20 @@ $(document).ready(function($) {
         $contentThis.slideToggle()
     });
 
+
+     $(window).scroll(function(){
+     if ($(this).scrollTop() > 800) {
+       $('.link--top').fadeIn();
+        } else {
+          $('.link--top').fadeOut();
+       }
+     }); 
+     
+     $('.link--top').click(function(){
+       $("html, body").animate({ scrollTop: 0 }, 600);
+       return false;
+     });
+
   //   var sliderB = new Swiper('.get-items', {
   //       speed: 800,
   //       slidesPerView: 3,
