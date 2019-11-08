@@ -6178,6 +6178,14 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 
 .section-about .stat-item:nth-child(2) { margin: 0 9.5rem; }
 
+.section-result { padding-top: 6rem; padding-bottom: 16rem; min-height: 80vh; }
+
+.section-result .result { padding-top: 0; }
+
+.section-result .result .banner { margin: 10rem 0 0 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+.section-result .result .banner a:only-child { max-width: 100%; width: 100%; }
+
 .section-blog { padding-top: 6rem; padding-bottom: 16rem; min-height: 80vh; }
 
 .section-blog .blog { padding-top: 0; }
