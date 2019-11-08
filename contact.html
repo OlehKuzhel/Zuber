@@ -31,8 +31,24 @@
                <div class="header-side">
                   <a href="tel:+380990909999" class="link link--evel link--phone">+38 099 09 099 99</a>
                   <div class="header-city">
+                     <select name="cityselect" class="select select--header select--city">
+                        <option value="Миколаїв">Миколаїв</option>
+                        <option value="Харьков">Харьков</option>
+                        <option value="Киев">Киев</option>
+                        <option value="Миколаїв">Миколаїв</option>
+                        <option value="Харьков">Харьков</option>
+                        <option value="Киев">Киев</option>
+                        <option value="Миколаїв">Миколаїв</option>
+                        <option value="Харьков">Харьков</option>
+                        <option value="Киев">Киев</option>
+                     </select>
                   </div>
                   <div class="header-lang">
+                     <select name="langselect" class="select select--header select--lang">
+                        <option value="укр">укр</option>
+                        <option value="ру">ру</option>
+                        <option value="en">en</option>
+                     </select>
                   </div>
                   <a href="#" class="link link--evel link--login">Вхід</a>
                   <a href="#" class="link link--evel link--reg">Реєстрація</a>
@@ -40,17 +56,102 @@
             </div>
          </div>
       </header>
-      <section class="section section-about">
+      <section class="section section-contact">
          <div class="wrapper">
          	<div class="breabcrumbs">
          		<a href="#" class="link link--breab">Головна</a>
-         		<a href="#" class="link link--breab current">Про сервіс</a>
+         		<a href="#" class="link link--breab current">Наші контакти</a>
          	</div>
-         	<div class="page-header">
-            		<img src="img/about.png" alt="">
+            <div class="contact">
+            	<div class="contact-map">
+            		
+            		<div id="map">
+            			<iframe src="https://snazzymaps.com/embed/198097" width="100%" height="330px" style="border:none;"></iframe>
+            		</div>
+
+            		<h2 class="title title--h2 c2 bl">Наші контакти</h2>
+					
+					<div class="contact-map__row">
+						<div class="contact-map__item">
+							<p class="paragraph bl c1 up">
+								Щодо партнерства
+							</p>
+							<ul class="contact-map__list">
+								<li>Kyiv, Saksaganskogo str. 0112</li>
+								<li><a href="tel:+380999999999">+38 (099) 999-99-99</a></li>
+								<li>E-mail: <a class="mailmap" href="mailto:info@zuber.com.ua">info@zuber.com.ua</a></li>
+							</ul>
+						</div>
+						<div class="contact-map__item">
+							<p class="paragraph bl c1 up">
+								питання по сервісу
+							</p>
+							<ul class="contact-map__list">
+								<li>Kyiv, Saksaganskogo str. 0112</li>
+								<li><a href="tel:+380999999999">+38 (099) 999-99-99</a></li>
+								<li>E-mail: <a class="mailmap" href="mailto:info@zuber.com.ua">info@zuber.com.ua</a></li>
+							</ul>
+						</div>
+					</div>
+
+            		
+
             	</div>
-            <div class="about">
-               <h2 class="title title--h2 c2 bl">Про сервіс</h2>
+
+            	<div class="contact-form">
+            		<div class="contact-form__head">
+            		<p class="paragraph bl c6 text-center">
+            			Зв'яжіться з нами 
+            		</p>
+            		</div>
+            		<div class="contact-form__content">
+            		<form action="any.php" class="form form-contact">
+                  
+                  	<div class="form-block">
+                        
+                        <input type="text" name="name" required class="field" id="name">
+                        <label for="name">Ім'я</label>
+                     </div>
+                     <div class="form-block">
+                        
+                        <select class="select select--eternal" required data-placeholder=" " name="tip" id="tip">
+                           <option></option>
+                           <option value="Тип">Тип</option>
+                           <option value="Тип">Тип</option>
+                           <option value="Тип">Тип</option>
+                           <option value="Тип">Тип</option>
+                           <option value="Тип">Тип</option>
+                           <option value="Тип">Тип</option>
+                           <option value="Тип">Тип</option>
+                           <option value="Тип">Тип</option>
+                        </select>
+                        <label for="tip">Тип звернення</label>
+                     </div>
+                     <div class="form-block">
+                        
+                        <input type="tel" name="phone" required class="field" id="phone">
+                        <label for="phone">Телефон</label>
+                     </div>
+                     <div class="form-block">
+                        
+                        <input type="text" name="email" class="field" id="email">
+                        <label for="email">Електронна пошта</label>
+                     </div>
+                     <div class="form-block">
+                        
+                        <input type="text" name="message" class="field" id="message">
+                        <label for="message">Ваше повідомлення</label>
+                     </div>
+                     <div class="form-block">
+                     	сюда вставите капчу
+                     </div>
+                  
+                  <a href="#" class="btn btn--evel btn--submit">Відправити</a>
+                  
+               </form>
+               </div>
+            	</div>
+               
                
             </div>
          </div>
