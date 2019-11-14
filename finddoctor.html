@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang=ru>
+   <head>
+      <meta charset=UTF-8>
+      <title>Alego.agency</title>
+      <meta content=ru http-equiv=content-language>
+      <meta content="Alego.agency" name=description>
+      <meta content="Alego.agency" name=keywords>
+      <meta content="Alego.agency" property=og:title>
+      <meta content=website property=og:type>
+      <meta content=img/title.jpg property=og:image>
+      <meta content="Alego.agency" property=og:description>
+      <meta content="width=device-width,user-scalable=no"name=viewport id=viewport>
+      <link href=favicon.ico rel="shortcut icon"type=image/x-icon>
+      <link href="css/main.css" rel="stylesheet">
+      <link href="css/media.css" rel="stylesheet">
+   </head>
+   <body class="bg-page">
+      <header class="section section-header">
+         <div class="wrapper">
+            <div class="header">
+               <div class="header-logo">
+                  <a href="#" class="link link--logo"><img src="img/logo.svg" alt=""></a>
+               </div>
+               <ul class="header-menu">
+                  <li><a href="#" class="link link--evel link--menu">Лікарі</a></li>
+                  <li><a href="#" class="link link--evel link--menu">Корисні статі</a></li>
+                  <li><a href="#" class="link link--evel link--menu">Про сервіс</a></li>
+                  <li><a href="#" class="link link--evel link--menu">Контакти</a></li>
+               </ul>
+               <div class="header-side">
+                  <a href="tel:+380990909999" class="link link--evel link--phone">+38 099 09 099 99</a>
+                  <div class="header-city">
+                     <select name="cityselect" class="select select--header select--city">
+                        <option value="Миколаїв">Миколаїв</option>
+                        <option value="Харьков">Харьков</option>
+                        <option value="Киев">Киев</option>
+                        <option value="Миколаїв">Миколаїв</option>
+                        <option value="Харьков">Харьков</option>
+                        <option value="Киев">Киев</option>
+                        <option value="Миколаїв">Миколаїв</option>
+                        <option value="Харьков">Харьков</option>
+                        <option value="Киев">Киев</option>
+                     </select>
+                  </div>
+                  <div class="header-lang">
+                     <select name="langselect" class="select select--header select--lang">
+                        <option value="укр">укр</option>
+                        <option value="ру">ру</option>
+                        <option value="en">en</option>
+                     </select>
+                  </div>
+                  <a href="#" class="link link--evel link--login">Вхід</a>
+                  <a href="#" class="link link--evel link--reg">Реєстрація</a>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="section section-find">
+         <div class="wrapper">
+            <div class="breabcrumbs">
+               <a href="#" class="link link--breab">Головна</a>
+               <a href="#" class="link link--breab current">Лікарі</a>
+            </div>
+            <div class="find">
+               <div class="find-form">
+                  <h2 class="title title--h2 lg c1 text-center">
+                     Знайдіть лікаря на найбільш зручний час та легко запишіться на лікування
+                  </h2>
+                  <p class="title title--h2 lg c2 text-center">
+                     Виберіть параметри пошуку лікаря
+                  </p>
+                  <form action="any.php" class="form form-page">
+                     <div class="form-rows">
+                        <div class="form-row">
+                           <div class="form-block">
+                              <select class="select select--eternal" data-placeholder=" " name="area" id="area">
+                                 <option></option>
+                                 <option value="Голосiївський">Голосiївський</option>
+                                 <option value="Голосiївський">Голосiївський</option>
+                                 <option value="Голосiївський">Голосiївський</option>
+                                 <option value="Голосiївський">Голосiївський</option>
+                                 <option value="Голосiївський">Голосiївський</option>
+                                 <option value="Голосiївський">Голосiївський</option>
+                                 <option value="Голосiївський">Голосiївський</option>
+                                 <option value="Голосiївський">Голосiївський</option>
+                              </select>
+                              <label for="area">Район</label>
+                           </div>
+                           <div class="form-block">
+                              <select class="select select--eternal" data-placeholder=" " name="what" id="what">
+                                 <option></option>
+                                 <option value="біль">Зубний біль</option>
+                                 <option value="біль">Зубний біль 2</option>
+                                 <option value="біль">Зубний біль 3</option>
+                              </select>
+                              <label for="what">Що турбує</label>
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <div class="form-block">
+                              <input type="text" name="date" class="field field--date" id="date">
+                              <label for="date">Оберіть дату прийому</label>
+                           </div>
+                           <div class="form-block">
+                              <select class="select select--time" data-placeholder=" " name="time" id="time">
+                                 <option></option>
+                                 <option value="Ранок">Ранок</option>
+                                 <option value="Вечір">Вечір</option>
+                              </select>
+                              <label for="time">Коли зручно?</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-check">
+                        <input type="checkbox" class="checkbox" value="Ai" id="ai" name="ai" />
+                        <label for="ai">Знайти лікаря на найближчі 24 години</label>
+                     </div>
+                     <a href="#" class="btn btn--evel btn--submit">Знайти</a>
+                  </form>
+               </div>
+               <div class="find-filter">
+                  <p class="title title--h3 lg c1">Знайдено <span>57</span> лікарів</p>
+                  <div class="find-filter__side">
+                     <div class="form-block">
+                        <select class="select select--eternal" data-placeholder=" " name="rate" id="rate">
+                           <option></option>
+                           <option value="хз1">хз1</option>
+                           <option value="хз1">хз1</option>
+                           <option value="хз1">хз1</option>
+                           <option value="хз1">хз1</option>
+                           <option value="хз1">хз1</option>
+                           <option value="хз1">хз1</option>
+                        </select>
+                        <label for="area">За рейтингом</label>
+                     </div>
+                     <a href="#" class="link link--filter active" data-view="pl">
+                        <svg viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M0 6h5V0H0v6zm0 7h5V7H0v6zm6 0h5V7H6v6zm6 0h5V7h-5v6zM6 6h5V0H6v6zm6-6v6h5V0h-5z" fill="#1B65B9"/>
+                        </svg>
+                     </a>
+                     <a href="#" class="link link--filter" data-view="rw">
+                        <svg viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M0 9h4V5H0v4zm0 5h4v-4H0v4zM0 4h4V0H0v4zm5 5h12V5H5v4zm0 5h12v-4H5v4zM5 0v4h12V0H5z" fill="#8296A5"/>
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+               <div class="find-items">
+                  <div class="find-item">
+                     <div class="doctor doctor--find">
+                        <div class="doctor-head">
+                           <div class="doctor-info">
+                              <div class="doctor-rate">
+                                 <p class="paragraph sm lg c4">Pейтинг</p>
+                                 <div class="star-row">
+                                    <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
+                                       <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
+                              <div class="doctor-pos">
+                                 <p class="paragraph sm c4">офтальмолог</p>
+                                 <p class="paragraph sm bl c1">стаж - 17 років</p>
+                              </div>
+                           </div>
+                           <div class="doctor-photo">
+                              <img src="img/doc.png" alt="">
+                           </div>
+                        </div>
+                        <div class="doctor-bottom">
+                           <p class="paragraph sm c4">Національний науковий центр радіаційної медицини Національної академії медичних
+                              наук України м. Київ<br>
+                              — филиал №4, кабинет 21
+                           </p>
+                           <div class="doctor-bottom__rev">
+                              <p class="paragraph c5"><span>94</span> відгука</p>
+                           </div>
+                           <div class="doctor-bottom__btns">
+                              <a href="#" class="btn btn--more">Докладніше</a>
+                              <a href="#" class="btn btn--write">Записатися</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="find-item">
+                     <div class="doctor doctor--find">
+                        <div class="doctor-head">
+                           <div class="doctor-info">
+                              <div class="doctor-rate">
+                                 <p class="paragraph sm lg c4">Pейтинг</p>
+                                 <div class="star-row">
+                                    <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
+                                       <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
+                              <div class="doctor-pos">
+                                 <p class="paragraph sm c4">офтальмолог</p>
+                                 <p class="paragraph sm bl c1">стаж - 17 років</p>
+                              </div>
+                           </div>
+                           <div class="doctor-photo">
+                              <img src="img/doc.png" alt="">
+                           </div>
+                        </div>
+                        <div class="doctor-bottom">
+                           <p class="paragraph sm c4">Національний науковий центр радіаційної медицини Національної академії медичних
+                              наук України м. Київ<br>
+                              — филиал №4, кабинет 21
+                           </p>
+                           <div class="doctor-bottom__rev">
+                              <p class="paragraph c5"><span>94</span> відгука</p>
+                           </div>
+                           <div class="doctor-bottom__btns">
+                              <a href="#" class="btn btn--more">Докладніше</a>
+                              <a href="#" class="btn btn--write">Записатися</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="find-item">
+                     <div class="doctor doctor--find">
+                        <div class="doctor-head">
+                           <div class="doctor-info">
+                              <div class="doctor-rate">
+                                 <p class="paragraph sm lg c4">Pейтинг</p>
+                                 <div class="star-row">
+                                    <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
+                                       <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
+                              <div class="doctor-pos">
+                                 <p class="paragraph sm c4">офтальмолог</p>
+                                 <p class="paragraph sm bl c1">стаж - 17 років</p>
+                              </div>
+                           </div>
+                           <div class="doctor-photo">
+                              <img src="img/doc.png" alt="">
+                           </div>
+                        </div>
+                        <div class="doctor-bottom">
+                           <p class="paragraph sm c4">Національний науковий центр радіаційної медицини Національної академії медичних
+                              наук України м. Київ<br>
+                              — филиал №4, кабинет 21
+                           </p>
+                           <div class="doctor-bottom__rev">
+                              <p class="paragraph c5"><span>94</span> відгука</p>
+                           </div>
+                           <div class="doctor-bottom__btns">
+                              <a href="#" class="btn btn--more">Докладніше</a>
+                              <a href="#" class="btn btn--write">Записатися</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="banner">
+                  <a href="#" class="link link--banner"><img src="img/b1.png" alt=""></a>
+                  <a href="#" class="link link--banner"><img src="img/b2.png" alt=""></a>
+               </div>
+               <div class="find-items">
+               	<div class="find-item">
+                     <div class="doctor doctor--find">
+                        <div class="doctor-head">
+                           <div class="doctor-info">
+                              <div class="doctor-rate">
+                                 <p class="paragraph sm lg c4">Pейтинг</p>
+                                 <div class="star-row">
+                                    <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
+                                       <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
+                              <div class="doctor-pos">
+                                 <p class="paragraph sm c4">офтальмолог</p>
+                                 <p class="paragraph sm bl c1">стаж - 17 років</p>
+                              </div>
+                           </div>
+                           <div class="doctor-photo">
+                              <img src="img/doc.png" alt="">
+                           </div>
+                        </div>
+                        <div class="doctor-bottom">
+                           <p class="paragraph sm c4">Національний науковий центр радіаційної медицини Національної академії медичних
+                              наук України м. Київ<br>
+                              — филиал №4, кабинет 21
+                           </p>
+                           <div class="doctor-bottom__rev">
+                              <p class="paragraph c5"><span>94</span> відгука</p>
+                           </div>
+                           <div class="doctor-bottom__btns">
+                              <a href="#" class="btn btn--more">Докладніше</a>
+                              <a href="#" class="btn btn--write">Записатися</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="find-item">
+                     <div class="doctor doctor--find">
+                        <div class="doctor-head">
+                           <div class="doctor-info">
+                              <div class="doctor-rate">
+                                 <p class="paragraph sm lg c4">Pейтинг</p>
+                                 <div class="star-row">
+                                    <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
+                                       <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
+                              <div class="doctor-pos">
+                                 <p class="paragraph sm c4">офтальмолог</p>
+                                 <p class="paragraph sm bl c1">стаж - 17 років</p>
+                              </div>
+                           </div>
+                           <div class="doctor-photo">
+                              <img src="img/doc.png" alt="">
+                           </div>
+                        </div>
+                        <div class="doctor-bottom">
+                           <p class="paragraph sm c4">Національний науковий центр радіаційної медицини Національної академії медичних
+                              наук України м. Київ<br>
+                              — филиал №4, кабинет 21
+                           </p>
+                           <div class="doctor-bottom__rev">
+                              <p class="paragraph c5"><span>94</span> відгука</p>
+                           </div>
+                           <div class="doctor-bottom__btns">
+                              <a href="#" class="btn btn--more">Докладніше</a>
+                              <a href="#" class="btn btn--write">Записатися</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="find-item">
+                     <div class="doctor doctor--find">
+                        <div class="doctor-head">
+                           <div class="doctor-info">
+                              <div class="doctor-rate">
+                                 <p class="paragraph sm lg c4">Pейтинг</p>
+                                 <div class="star-row">
+                                    <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
+                                       <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
+                              <div class="doctor-pos">
+                                 <p class="paragraph sm c4">офтальмолог</p>
+                                 <p class="paragraph sm bl c1">стаж - 17 років</p>
+                              </div>
+                           </div>
+                           <div class="doctor-photo">
+                              <img src="img/doc.png" alt="">
+                           </div>
+                        </div>
+                        <div class="doctor-bottom">
+                           <p class="paragraph sm c4">Національний науковий центр радіаційної медицини Національної академії медичних
+                              наук України м. Київ<br>
+                              — филиал №4, кабинет 21
+                           </p>
+                           <div class="doctor-bottom__rev">
+                              <p class="paragraph c5"><span>94</span> відгука</p>
+                           </div>
+                           <div class="doctor-bottom__btns">
+                              <a href="#" class="btn btn--more">Докладніше</a>
+                              <a href="#" class="btn btn--write">Записатися</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="find-item">
+                     <div class="doctor doctor--find">
+                        <div class="doctor-head">
+                           <div class="doctor-info">
+                              <div class="doctor-rate">
+                                 <p class="paragraph sm lg c4">Pейтинг</p>
+                                 <div class="star-row">
+                                    <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
+                                       <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
+                              <div class="doctor-pos">
+                                 <p class="paragraph sm c4">офтальмолог</p>
+                                 <p class="paragraph sm bl c1">стаж - 17 років</p>
+                              </div>
+                           </div>
+                           <div class="doctor-photo">
+                              <img src="img/doc.png" alt="">
+                           </div>
+                        </div>
+                        <div class="doctor-bottom">
+                           <p class="paragraph sm c4">Національний науковий центр радіаційної медицини Національної академії медичних
+                              наук України м. Київ<br>
+                              — филиал №4, кабинет 21
+                           </p>
+                           <div class="doctor-bottom__rev">
+                              <p class="paragraph c5"><span>94</span> відгука</p>
+                           </div>
+                           <div class="doctor-bottom__btns">
+                              <a href="#" class="btn btn--more">Докладніше</a>
+                              <a href="#" class="btn btn--write">Записатися</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="find-item">
+                     <div class="doctor doctor--find">
+                        <div class="doctor-head">
+                           <div class="doctor-info">
+                              <div class="doctor-rate">
+                                 <p class="paragraph sm lg c4">Pейтинг</p>
+                                 <div class="star-row">
+                                    <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
+                                       <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
+                              <div class="doctor-pos">
+                                 <p class="paragraph sm c4">офтальмолог</p>
+                                 <p class="paragraph sm bl c1">стаж - 17 років</p>
+                              </div>
+                           </div>
+                           <div class="doctor-photo">
+                              <img src="img/doc.png" alt="">
+                           </div>
+                        </div>
+                        <div class="doctor-bottom">
+                           <p class="paragraph sm c4">Національний науковий центр радіаційної медицини Національної академії медичних
+                              наук України м. Київ<br>
+                              — филиал №4, кабинет 21
+                           </p>
+                           <div class="doctor-bottom__rev">
+                              <p class="paragraph c5"><span>94</span> відгука</p>
+                           </div>
+                           <div class="doctor-bottom__btns">
+                              <a href="#" class="btn btn--more">Докладніше</a>
+                              <a href="#" class="btn btn--write">Записатися</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="find-item">
+                     <div class="doctor doctor--find">
+                        <div class="doctor-head">
+                           <div class="doctor-info">
+                              <div class="doctor-rate">
+                                 <p class="paragraph sm lg c4">Pейтинг</p>
+                                 <div class="star-row">
+                                    <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
+                                       <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
+                                       <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
+                              <div class="doctor-pos">
+                                 <p class="paragraph sm c4">офтальмолог</p>
+                                 <p class="paragraph sm bl c1">стаж - 17 років</p>
+                              </div>
+                           </div>
+                           <div class="doctor-photo">
+                              <img src="img/doc.png" alt="">
+                           </div>
+                        </div>
+                        <div class="doctor-bottom">
+                           <p class="paragraph sm c4">Національний науковий центр радіаційної медицини Національної академії медичних
+                              наук України м. Київ<br>
+                              — филиал №4, кабинет 21
+                           </p>
+                           <div class="doctor-bottom__rev">
+                              <p class="paragraph c5"><span>94</span> відгука</p>
+                           </div>
+                           <div class="doctor-bottom__btns">
+                              <a href="#" class="btn btn--more">Докладніше</a>
+                              <a href="#" class="btn btn--write">Записатися</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="pagination">
+                  <a href="#" class="link link--pagination disable">
+                     <svg viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1.08716L3 8.08716L10 15.0872" stroke="#5B636A" stroke-width="3"/>
+                     </svg>
+                  </a>
+                  <ul class="pagination-list">
+                     <li class="active"><a href="#" class="link link--page">1</a></li>
+                     <li ><a href="#" class="link link--page">2</a></li>
+                     <li><a href="#" class="link link--page">...</a></li>
+                     <li><a href="#" class="link link--page">5</a></li>
+                  </ul>
+                  <a href="#" class="link link--pagination">
+                     <svg viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 1.08716L9 8.08716L2 15.0872" stroke="#1B65B9" stroke-width="3"/>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="section section-footer">
+         <div class="wrapper">
+            <div class="footer">
+               <div class="footer-logo">
+                  <a href="#" class="link link--logo"><img src="img/logo.svg" alt=""></a>
+               </div>
+               <div class="footer-row">
+                  <div class="footer-left">
+                     <p class="paragraph sm c6">стоматологічна допомога</p>
+                     <p class="paragraph sm c6">© Copyright 2019 Zuber</p>
+                     <a href="#" class="link link--agency"><img src="img/logof.png" alt=""></a>
+                  </div>
+                  <div class="footer-mid">
+                     <a href="#" class="btn btn--call">Зворотний дзвінок</a>
+                     <ul class="footer-links">
+                        <li><a href="#" class="link link--footer">Згода користувача</a></li>
+                        <li><a href="#" class="link link--footer">Правила сервісу</a></li>
+                        <li><a href="#" class="link link--footer">Питання та відповіді</a></li>
+                        <li><a href="#" class="link link--footer">Партнерам та реклама</a></li>
+                     </ul>
+                  </div>
+                  <div class="footer-right">
+                     <div class="footer-social">
+                        <a href="#" class="link link--social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="link link--social"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="link link--social"><i class="fab fa-instagram"></i></a>
+                     </div>
+                     <a href="tel:+380990909999" class="link link--footer">+38 (099) 999-99-99</a>
+                     <a href="mailto:+info@zuber.com.ua" class="link link--footer">info@zuber.com.ua</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <a href="#" class="link link--top">
+         <svg viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 10l7-7 7 7" stroke="#fff" stroke-width="3"/>
+         </svg>
+      </a>
+      <script src=js/libs.min.js></script>
+      <script src=js/main.js></script>
+   </body>
+</html>
