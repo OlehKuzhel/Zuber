@@ -6224,6 +6224,12 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 
 .section-doctorpage .doctorpage-info__credits { margin-left: 3rem; }
 
+.section-doctorpage .doctorpage-info__credits ul { padding: 0; margin: 0; list-style: none; }
+
+.section-doctorpage .doctorpage-info__credits ul li { font-weight: 300; font-size: 1.8rem; line-height: 2rem; margin-bottom: 1.25rem; }
+
+.section-doctorpage .doctorpage-info__credits ul li:last-child { margin-bottom: 0; }
+
 .section-doctorpage .doctorpage-info__form { margin-left: auto; }
 
 .section-doctorpage .doctorpage-info__form .form { padding: 3.5rem 3rem 3rem 3rem; }
@@ -6247,12 +6253,6 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 .section-doctorpage .doctorpage-info__spec { margin-top: 2.5rem; margin-bottom: 3rem; }
 
 .section-doctorpage .doctorpage-info__spec .paragraph { margin-bottom: 1.5rem; }
-
-.section-doctorpage .doctorpage-info__spec ul { padding: 0; margin: 0; list-style: none; }
-
-.section-doctorpage .doctorpage-info__spec ul li { font-weight: 300; font-size: 1.8rem; line-height: 2rem; margin-bottom: 1.25rem; }
-
-.section-doctorpage .doctorpage-info__spec ul li:last-child { margin-bottom: 0; }
 
 .section-doctorpage .doctorpage-info__location { margin-bottom: 3rem; }
 
