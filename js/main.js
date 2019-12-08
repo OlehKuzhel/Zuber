@@ -42,6 +42,13 @@ $(document).ready(function($) {
     }
   });
 
+  $('.review-star').on('click',  function(event) {
+    event.preventDefault();
+    $Sclass = $(this).data('star')
+    $(this).parent().removeClass('s1 s2 s3 s4 s5').addClass( 's'+ $Sclass)
+    $('[name=starscol]').val($Sclass)
+  });
+
   $('.field').blur(function (event) {
         if ($(this).val() != '') {
             $(this).addClass('filled')
@@ -62,18 +69,7 @@ $(document).ready(function($) {
         
         },
         afterLoad: function(instance, current){
-            if (popup == "#moremap") {
-            var sliderMore = new Swiper('.more-slider', {
-        speed: 800,
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-  navigation: {
-    nextEl: '.more-nav--next',
-    prevEl: '.more-nav--prev',
-  },
-    });
-        }
+          
         },
         afterClose: function(instance, slide) {
         },
@@ -182,10 +178,38 @@ $(document).ready(function($) {
   //           },
   //       }
   //   });
-
+$('[name=langselect]').on('change',function(event) {
+  event.preventDefault();
+  window.location.href = $(this).val()
+  });
     
 
-  
+  $('.form-ajax').submit(function(event) {
+        var _form = $(this);
+        var th = _form.serialize();
+        var form_url = _form.attr('action');
+        $.ajax({
+            type: "POST",
+            url: form_url,
+            data: th,
+            success: function(data) {
+                $.fancybox.close()
+                popup = "#thanks"
+                $.fancybox.open({
+                    src: popup,
+                    type: 'inline',
+                    opts: opnsFancy,
+                });
+                setTimeout(function() {
+                    _form.trigger("reset");
+                }, 3000);
+                setTimeout(function() {
+                    $.fancybox.close();
+                }, 15000)
+            }
+        });
+        event.preventDefault();
+    });
    
 
     // var pattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/i;
