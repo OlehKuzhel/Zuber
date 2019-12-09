@@ -180,7 +180,8 @@ $(document).ready(function($) {
   //   });
 $('[name=langselect]').on('change',function(event) {
   event.preventDefault();
-  window.location.href = $(this).val()
+  $Lang = $(this).find(':selected').attr('data-href')
+  window.location.href = $Lang
   });
     
 
