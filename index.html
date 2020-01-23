@@ -53,6 +53,15 @@
                   <a href="#" class="link link--evel link--login">Вхід</a>
                   <a href="#" class="link link--evel link--reg">Реєстрація</a>
                </div>
+               <div class="header-mobile">
+                  <a href="#" class="link link--toggle">
+                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-1 -1 22 16" width="18" height="12">
+                        <path d="M18 7H0V5h18v2z" id="a"/>
+                        <path d="M0 0h18v2H0V0z" id="b"/>
+                        <path d="M0 10h18v2H0v-2z" id="c"/>
+                     </svg>
+                  </a>
+               </div>
             </div>
          </div>
       </header>
@@ -66,10 +75,8 @@
                   Потрібна термінова стоматологічна допога?
                </h2>
                <form action="any.php" class="form form-main">
-                  
                   <div class="form-row">
                      <div class="form-block">
-                        
                         <select class="select select--eternal" data-placeholder=" " name="area" id="area">
                            <option></option>
                            <option value="Голосiївський">Голосiївський</option>
@@ -84,7 +91,6 @@
                         <label for="area">Район</label>
                      </div>
                      <div class="form-block">
-                        
                         <select class="select select--eternal" data-placeholder=" " name="what" id="what">
                            <option></option>
                            <option value="біль">Зубний біль</option>
@@ -96,12 +102,10 @@
                   </div>
                   <div class="form-row">
                      <div class="form-block">
-                        
                         <input type="text" name="date" class="field field--date" id="date">
                         <label for="date">Оберіть дату прийому</label>
                      </div>
                      <div class="form-block">
-                        
                         <select class="select select--time" data-placeholder=" " name="time" id="time">
                            <option></option>
                            <option value="Ранок">Ранок</option>
@@ -110,13 +114,11 @@
                         <label for="time">Коли зручно?</label>
                      </div>
                   </div>
-                  
                   <div class="form-check">
                      <input type="checkbox" class="checkbox" value="Ai" id="ai" name="ai" />
                      <label for="ai">Знайти лікаря на найближчі 24 години</label>
                   </div>
                   <button type="submit" class="btn btn--evel btn--submit">Знайти</button>
-                  
                </form>
             </div>
          </div>
@@ -234,16 +236,45 @@
                   Останні відгуки пацієнтів
                </h2>
                <div class="reviews-content">
-               <div class="reviews-slider swiper-container">
-                  <div class="swiper-wrapper">
-                     <div class="reviews-slide swiper-slide">
-                        <p class="paragraph bl c1">Відгуки про лікаря</p>
-                        <div class="reviews-slide__content">
-                           <div class="reviews-slide__left">
-                              <div class="doctor">
-                              <div class="doctor-info">
-                              <div class="doctor-rate">
-                                 <p class="paragraph sm lg c4">Pейтинг</p>
+                  <div class="reviews-slider swiper-container">
+                     <div class="swiper-wrapper">
+                        <div class="reviews-slide swiper-slide">
+                           <p class="paragraph bl c1">Відгуки про лікаря</p>
+                           <div class="reviews-slide__content">
+                              <div class="reviews-slide__left">
+                                 <div class="doctor">
+                                    <div class="doctor-info">
+                                       <div class="doctor-rate">
+                                          <p class="paragraph sm lg c4">Pейтинг</p>
+                                          <div class="star-row">
+                                             <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
+                                                <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
+                                                <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
+                                                <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
+                                                <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
+                                             </svg>
+                                          </div>
+                                       </div>
+                                       <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
+                                       <div class="doctor-pos">
+                                          <p class="paragraph sm c4">офтальмолог</p>
+                                          <p class="paragraph sm bl c1">стаж - 17 років</p>
+                                       </div>
+                                    </div>
+                                    <div class="doctor-photo">
+                                       <img src="img/doc.png" alt="">
+                                       <p class="paragraph c5"><span>94</span> відгука</p>
+                                    </div>
+                                 </div>
+                                 <a href="#" class="link link--rewiews">
+                                    Всі відгуки про лікаря
+                                    <svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M8 0.0871582L6.59 1.49716L12.17 7.08716H0V9.08716H12.17L6.59 14.6772L8 16.0872L16 8.08716L8 0.0871582Z" fill="#1B65B9"/>
+                                    </svg>
+                                 </a>
+                              </div>
+                              <div class="reviews-slide__block">
                                  <div class="star-row">
                                     <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                        <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
@@ -253,50 +284,51 @@
                                        <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
                                     </svg>
                                  </div>
-                              </div>
-                              <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
-                              <div class="doctor-pos">
-                                 <p class="paragraph sm c4">офтальмолог</p>
-                                 <p class="paragraph sm bl c1">стаж - 17 років</p>
-                              </div>
-                              </div>
-                              <div class="doctor-photo">
-                                 <img src="img/doc.png" alt="">
-                                 <p class="paragraph c5"><span>94</span> відгука</p>
-                              </div>
-                           </div>
-                              <a href="#" class="link link--rewiews">Всі відгуки про лікаря<svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 0.0871582L6.59 1.49716L12.17 7.08716H0V9.08716H12.17L6.59 14.6772L8 16.0872L16 8.08716L8 0.0871582Z" fill="#1B65B9"/>
-</svg>
-</a>
-                           </div>
-                           
-                           <div class="reviews-slide__block">
-                              <div class="star-row">
-                                 <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
-                                    <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
-                                    <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
-                                    <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
-                                    <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
-                                 </svg>
-                              </div>
-                              <p class="paragraph paragraph--review sm c4">Замечательный доктор. Помог оперативно решить вопрос с консультацией по уточнению диагноза и дальнейшему лечению...</p>
-                              <div class="reviews-slide__name">
-                                 <p class="paragraph bl c1">Валентин  Стрыжановский</p>
-                                 <p class="paragraph sm c5">04.03.19</p>
+                                 <p class="paragraph paragraph--review sm c4">Замечательный доктор. Помог оперативно решить вопрос с консультацией по уточнению диагноза и дальнейшему лечению...</p>
+                                 <div class="reviews-slide__name">
+                                    <p class="paragraph bl c1">Валентин  Стрыжановский</p>
+                                    <p class="paragraph sm c5">04.03.19</p>
+                                 </div>
                               </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="reviews-slide swiper-slide">
-                        <p class="paragraph bl c1">Відгуки про лікаря</p>
-                        <div class="reviews-slide__content">
-                           <div class="reviews-slide__left">
-                              <div class="doctor">
-                              <div class="doctor-info">
-                              <div class="doctor-rate">
-                                 <p class="paragraph sm lg c4">Pейтинг</p>
+                        <div class="reviews-slide swiper-slide">
+                           <p class="paragraph bl c1">Відгуки про лікаря</p>
+                           <div class="reviews-slide__content">
+                              <div class="reviews-slide__left">
+                                 <div class="doctor">
+                                    <div class="doctor-info">
+                                       <div class="doctor-rate">
+                                          <p class="paragraph sm lg c4">Pейтинг</p>
+                                          <div class="star-row">
+                                             <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
+                                                <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
+                                                <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
+                                                <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
+                                                <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
+                                             </svg>
+                                          </div>
+                                       </div>
+                                       <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
+                                       <div class="doctor-pos">
+                                          <p class="paragraph sm c4">офтальмолог</p>
+                                          <p class="paragraph sm bl c1">стаж - 17 років</p>
+                                       </div>
+                                    </div>
+                                    <div class="doctor-photo">
+                                       <img src="img/doc.png" alt="">
+                                       <p class="paragraph c5"><span>94</span> відгука</p>
+                                    </div>
+                                 </div>
+                                 <a href="#" class="link link--rewiews">
+                                    Всі відгуки про лікаря
+                                    <svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M8 0.0871582L6.59 1.49716L12.17 7.08716H0V9.08716H12.17L6.59 14.6772L8 16.0872L16 8.08716L8 0.0871582Z" fill="#1B65B9"/>
+                                    </svg>
+                                 </a>
+                              </div>
+                              <div class="reviews-slide__block">
                                  <div class="star-row">
                                     <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                        <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
@@ -306,50 +338,51 @@
                                        <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
                                     </svg>
                                  </div>
-                              </div>
-                              <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
-                              <div class="doctor-pos">
-                                 <p class="paragraph sm c4">офтальмолог</p>
-                                 <p class="paragraph sm bl c1">стаж - 17 років</p>
-                              </div>
-                              </div>
-                              <div class="doctor-photo">
-                                 <img src="img/doc.png" alt="">
-                                 <p class="paragraph c5"><span>94</span> відгука</p>
-                              </div>
-                           </div>
-                              <a href="#" class="link link--rewiews">Всі відгуки про лікаря<svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 0.0871582L6.59 1.49716L12.17 7.08716H0V9.08716H12.17L6.59 14.6772L8 16.0872L16 8.08716L8 0.0871582Z" fill="#1B65B9"/>
-</svg>
-</a>
-                           </div>
-                           
-                           <div class="reviews-slide__block">
-                              <div class="star-row">
-                                 <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
-                                    <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
-                                    <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
-                                    <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
-                                    <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
-                                 </svg>
-                              </div>
-                              <p class="paragraph paragraph--review sm c4">Замечательный доктор. Помог оперативно решить вопрос с консультацией по уточнению диагноза и дальнейшему лечению...</p>
-                              <div class="reviews-slide__name">
-                                 <p class="paragraph bl c1">Валентин  Стрыжановский</p>
-                                 <p class="paragraph sm c5">04.03.19</p>
+                                 <p class="paragraph paragraph--review sm c4">Замечательный доктор. Помог оперативно решить вопрос с консультацией по уточнению диагноза и дальнейшему лечению...</p>
+                                 <div class="reviews-slide__name">
+                                    <p class="paragraph bl c1">Валентин  Стрыжановский</p>
+                                    <p class="paragraph sm c5">04.03.19</p>
+                                 </div>
                               </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="reviews-slide swiper-slide">
-                        <p class="paragraph bl c1">Відгуки про лікаря</p>
-                        <div class="reviews-slide__content">
-                           <div class="reviews-slide__left">
-                              <div class="doctor">
-                              <div class="doctor-info">
-                              <div class="doctor-rate">
-                                 <p class="paragraph sm lg c4">Pейтинг</p>
+                        <div class="reviews-slide swiper-slide">
+                           <p class="paragraph bl c1">Відгуки про лікаря</p>
+                           <div class="reviews-slide__content">
+                              <div class="reviews-slide__left">
+                                 <div class="doctor">
+                                    <div class="doctor-info">
+                                       <div class="doctor-rate">
+                                          <p class="paragraph sm lg c4">Pейтинг</p>
+                                          <div class="star-row">
+                                             <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
+                                                <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
+                                                <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
+                                                <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
+                                                <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
+                                             </svg>
+                                          </div>
+                                       </div>
+                                       <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
+                                       <div class="doctor-pos">
+                                          <p class="paragraph sm c4">офтальмолог</p>
+                                          <p class="paragraph sm bl c1">стаж - 17 років</p>
+                                       </div>
+                                    </div>
+                                    <div class="doctor-photo">
+                                       <img src="img/doc.png" alt="">
+                                       <p class="paragraph c5"><span>94</span> відгука</p>
+                                    </div>
+                                 </div>
+                                 <a href="#" class="link link--rewiews">
+                                    Всі відгуки про лікаря
+                                    <svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M8 0.0871582L6.59 1.49716L12.17 7.08716H0V9.08716H12.17L6.59 14.6772L8 16.0872L16 8.08716L8 0.0871582Z" fill="#1B65B9"/>
+                                    </svg>
+                                 </a>
+                              </div>
+                              <div class="reviews-slide__block">
                                  <div class="star-row">
                                     <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                        <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
@@ -359,56 +392,29 @@
                                        <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
                                     </svg>
                                  </div>
-                              </div>
-                              <p class="paragraph paragraph--name bl c2">Виктор Сергеевич Иванов</p>
-                              <div class="doctor-pos">
-                                 <p class="paragraph sm c4">офтальмолог</p>
-                                 <p class="paragraph sm bl c1">стаж - 17 років</p>
-                              </div>
-                              </div>
-                              <div class="doctor-photo">
-                                 <img src="img/doc.png" alt="">
-                                 <p class="paragraph c5"><span>94</span> відгука</p>
-                              </div>
-                           </div>
-                              <a href="#" class="link link--rewiews">Всі відгуки про лікаря<svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 0.0871582L6.59 1.49716L12.17 7.08716H0V9.08716H12.17L6.59 14.6772L8 16.0872L16 8.08716L8 0.0871582Z" fill="#1B65B9"/>
-</svg>
-</a>
-                           </div>
-                           
-                           <div class="reviews-slide__block">
-                              <div class="star-row">
-                                 <svg viewBox="0 0 80 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M78.6666 6.24708L73.8733 5.83374L72 1.42041L70.1266 5.84041L65.3333 6.24708L68.9733 9.40041L67.88 14.0871L72 11.6004L76.12 14.0871L75.0333 9.40041L78.6666 6.24708ZM72 10.3537L69.4933 11.8671L70.16 9.01374L67.9466 7.09374L70.8666 6.84041L72 4.15374L73.14 6.84708L76.06 7.10041L73.8466 9.02041L74.5133 11.8737L72 10.3537Z" fill="#8296A5"/>
-                                    <path d="M7.99998 11.6004L12.12 14.0871L11.0266 9.40041L14.6666 6.24708L9.87331 5.84041L7.99998 1.42041L6.12665 5.84041L1.33331 6.24708L4.97331 9.40041L3.87998 14.0871L7.99998 11.6004Z" fill="#F2C94C"/>
-                                    <path d="M24 11.6004L28.12 14.0871L27.0266 9.40041L30.6666 6.24708L25.8733 5.84041L24 1.42041L22.1266 5.84041L17.3333 6.24708L20.9733 9.40041L19.88 14.0871L24 11.6004Z" fill="#F2C94C"/>
-                                    <path d="M40 11.6004L44.12 14.0871L43.0266 9.40041L46.6666 6.24708L41.8733 5.84041L40 1.42041L38.1266 5.84041L33.3333 6.24708L36.9733 9.40041L35.88 14.0871L40 11.6004Z" fill="#F2C94C"/>
-                                    <path d="M56 11.6004L60.12 14.0871L59.0266 9.40041L62.6666 6.24708L57.8733 5.84041L56 1.42041L54.1266 5.84041L49.3333 6.24708L52.9733 9.40041L51.88 14.0871L56 11.6004Z" fill="#F2C94C"/>
-                                 </svg>
-                              </div>
-                              <p class="paragraph paragraph--review sm c4">Замечательный доктор. Помог оперативно решить вопрос с консультацией по уточнению диагноза и дальнейшему лечению...</p>
-                              <div class="reviews-slide__name">
-                                 <p class="paragraph bl c1">Валентин  Стрыжановский</p>
-                                 <p class="paragraph sm c5">04.03.19</p>
+                                 <p class="paragraph paragraph--review sm c4">Замечательный доктор. Помог оперативно решить вопрос с консультацией по уточнению диагноза и дальнейшему лечению...</p>
+                                 <div class="reviews-slide__name">
+                                    <p class="paragraph bl c1">Валентин  Стрыжановский</p>
+                                    <p class="paragraph sm c5">04.03.19</p>
+                                 </div>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
-               </div>
-               <div class="reviews-nav">
-                  <a href="#" class="link link--nav reviews-prev"><svg viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M10 1.08716L3 8.08716L10 15.0872" stroke-width="3"/>
-</svg></a>
-                  <a href="#" class="link link--nav reviews-next">
-                     <svg viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 1.08716L9 8.08716L2 15.0872" stroke-width="3"/>
-</svg>
-
-                  </a>
-               </div>
-               <div class="reviews-pagination swiper-pagination"></div>
+                  <div class="reviews-nav">
+                     <a href="#" class="link link--nav reviews-prev">
+                        <svg viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 1.08716L3 8.08716L10 15.0872" stroke-width="3"/>
+                        </svg>
+                     </a>
+                     <a href="#" class="link link--nav reviews-next">
+                        <svg viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M2 1.08716L9 8.08716L2 15.0872" stroke-width="3"/>
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="reviews-pagination swiper-pagination"></div>
                </div>
             </div>
          </div>
@@ -417,7 +423,7 @@
          <div class="wrapper">
             <div class="deal">
                <a href="link link--bigbanner">
-                  <img src="img/b3.png" alt="">
+               <img src="img/b3.png" alt="">
                </a>
             </div>
          </div>
@@ -445,8 +451,8 @@
                </h3>
                <p class="paragraph lg c4">
                   Нужно срочно найти стоматолога в Киеве? Не знаете, какая стоматология лучше? Хотите узнать, какой хороший стоматолог принимает недалеко от вашего места жительства или работы? Сервис Zuber поможет вам найти лучшего стоматолога не только в столице, но и по всей Украине.<br><br>
-               Мы выводим сферу стоматологии и поиска медицинских учреждений на новый уровень. Теперь контакты передовых дантистов всегда будут под рукой и вы в любой момент сможете записаться на прием тогда, когда вам это будет удобно. 
-                              </p>
+                  Мы выводим сферу стоматологии и поиска медицинских учреждений на новый уровень. Теперь контакты передовых дантистов всегда будут под рукой и вы в любой момент сможете записаться на прием тогда, когда вам это будет удобно. 
+               </p>
             </div>
          </div>
       </section>
@@ -484,13 +490,61 @@
             </div>
          </div>
       </footer>
-
       <a href="#" class="link link--top">
          <svg viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <path d="M2 10l7-7 7 7" stroke="#fff" stroke-width="3"/>
+            <path d="M2 10l7-7 7 7" stroke="#fff" stroke-width="3"/>
          </svg>
       </a>
+      <aside class="section section-mobile">
+         <div class="wrapper">
+            <div class="mobile">
+               <ul class="mobile-menu">
+                  <li><a href="#" class="link link--evel link--menu">Лікарі</a></li>
+                  <li><a href="#" class="link link--evel link--menu">Корисні статі</a></li>
+                  <li><a href="#" class="link link--evel link--menu">Про сервіс</a></li>
+                  <li><a href="#" class="link link--evel link--menu">Контакти</a></li>
+                  <li><a href="#" class="link link--evel link--menu">Згода користувача</a></li>
+                  <li><a href="#" class="link link--evel link--menu">Правила сервісу</a></li>
+                  <li><a href="#" class="link link--evel link--menu">Питання та відповіді</a></li>
+                  <li><a href="#" class="link link--evel link--menu">Партнерам та реклама</a></li>
+               </ul>
+               <div class="mobile-btns">
+                  <a href="#" class="link link--evel link--login">
+                     <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.453 16.787l1.88 1.88L18 12l-6.667-6.667-1.88 1.88 3.44 3.454H0v2.666h12.893l-3.44 3.454zM21.333 0H2.667C1.187 0 0 1.2 0 2.667V8h2.667V2.667h18.666v18.666H2.667V16H0v5.333A2.666 2.666 0 002.667 24h18.666C22.8 24 24 22.8 24 21.333V2.667C24 1.2 22.8 0 21.333 0z" fill="#fff"/>
+                     </svg>
+                     <span>Вхід</span>
+                  </a>
+                  <a href="#" class="link link--evel link--reg">
+                     <svg width="32" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.667 7.333h-4v-4H4v4H0V10h4v4h2.667v-4h4V7.333zM24 8.667a3.983 3.983 0 003.987-4c0-2.214-1.774-4-3.987-4-.427 0-.84.066-1.213.186a6.58 6.58 0 011.2 3.814c0 1.426-.454 2.72-1.2 3.813.373.12.786.187 1.213.187zm-6.667 0a3.983 3.983 0 003.987-4c0-2.214-1.773-4-3.987-4-2.213 0-4 1.786-4 4 0 2.213 1.787 4 4 4zm8.827 2.88c1.107.973 1.84 2.213 1.84 3.786V18h4v-2.667c0-2.053-3.16-3.32-5.84-3.786zm-8.827-.214c-2.666 0-8 1.334-8 4V18h16v-2.667c0-2.666-5.333-4-8-4z" fill="#fff"/>
+                     </svg>
+                     <span>Реєстрація</span>
+                  </a>
+                  <!-- Выводи когда вошел -->
+                  <!-- <a href="#" class="link link--evel link--profile"><svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M11 11a5.332 5.332 0 005.333-5.333A5.332 5.332 0 0011 .333a5.332 5.332 0 00-5.333 5.334A5.332 5.332 0 0011 11zm0 2.667C7.44 13.667.333 15.453.333 19v2.667h21.334V19c0-3.547-7.107-5.333-10.667-5.333z" fill="#fff"/>
+                     </svg><span>Мій профайл</span></a> -->
+               </div>
 
+               <div class="mobile-lang">
+                     <select name="langselect" class="select select--header select--lang">
+                        <option data-href="/ua/" value="/ua/">укр</option>
+                        <option data-href="/ru/" value="/ru/">ру</option>
+                        <option data-href="/en/" value="/en/">en</option>
+                     </select>
+                  </div>
+                  <a href="tel:+380990909999" class="link link--evel link--phone">+38 099 09 099 99</a>
+               <div class="mobile-footer">
+                  <div class="mobile-footer__logo"><img src="img/logo.svg" alt=""></div>
+                  <div class="mobile-footer__text">
+                     <p class="paragraph sm c6">стоматологічна допомога</p>
+                     <p class="paragraph sm c6">© Copyright 2019 Zuber</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </aside>
       <script src=js/libs.min.js></script>
       <script src=js/main.js></script>
    </body>

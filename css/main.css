@@ -5718,7 +5718,7 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 
 .link--tologin:hover { color: #231F20; }
 
-.link--add { font-size: 1.8rem; font-weight: 400; color: #1B65B9; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; margin-top: 3rem; }
+.link--add { font-size: 1.8rem; font-weight: 400; color: #1B65B9; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; margin-top: 3rem; max-width: 20rem; }
 
 .link--add svg { width: 2rem; height: 2rem; display: block; margin-right: 1rem; }
 
@@ -6015,6 +6015,8 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 .section-header { background: #1B65B9; position: fixed; z-index: 10; top: 0; left: 0; width: 100%; }
 
 .section-header .header { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; height: 6rem; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+.section-header .header-mobile { display: none; }
 
 .section-header .header-logo { width: 14rem; }
 
@@ -6539,6 +6541,14 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 .field-type__list { display: none; position: absolute; top: 100%; left: 0; margin: 0 0 0 0; padding: 1rem 2rem; width: 20rem; list-style: none; background: #FFFFFF; -webkit-border-radius: 0px 0px 8px 8px; border-radius: 0px 0px 8px 8px; -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2); box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2); }
 
 .field-type__list li { padding: .75rem 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; cursor: pointer; }
+
+.field-type__list li.active { pointer-events: none; }
+
+.field-type__list li.active span { color: #1B65B9; }
+
+.field-type__list li.active span svg path { fill: #1B65B9; }
+
+.field-type__list li.active span svg path + path { fill: #fff; }
 
 .field-type__list li:hover span { color: #1B65B9; }
 

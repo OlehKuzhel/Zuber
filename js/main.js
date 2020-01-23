@@ -42,15 +42,19 @@ $(document).ready(function($) {
     }
   });
 
-  $('.phone').mask('+38 (000) 000-00-00').focus(function(event) {
+    $('.phone').mask('+38 (000) 000-00-00')
+    $('body').on('focus', '.phone', function(event) {
         if ($(this).val() == '') {
             $(this).val('+38 (0')
         }
-    }).blur(function(event) {
+    })
+    $('body').on('blur', '.phone', function(event) {
         if ($(this).val() == '+38 (0') {
             $(this).val('')
         }
     });
+
+
 
   $('.review-star').on('click',  function(event) {
     event.preventDefault();
@@ -59,13 +63,13 @@ $(document).ready(function($) {
     $('[name=starscol]').val($Sclass)
   });
 
-  $('.field').blur(function (event) {
-        if ($(this).val() != '') {
+  $('body').on('blur', '.field', function(event) {
+    if ($(this).val() != '') {
             $(this).addClass('filled')
         } else {
             $(this).removeClass('filled')
         }
-    });
+  });
   
 
     var isMobile = false;
@@ -171,6 +175,51 @@ $(document).ready(function($) {
       $list = $(this).parent().find('.field-type__list')
       $('.field-type__list').not($list).slideUp()
       $list.slideToggle()
+
+
+     });
+
+     $('.add-adr').on('click', function(event) {
+       event.preventDefault();
+       $wher = $(this).parent().find('.form-block__append')
+       $fieldLenght = $(this).parent().find('.form-block').length + 1
+       $field = $(this).parent().find('.form-block').eq(0).clone()
+       $($field).find('input').attr('name', 'adress['+$fieldLenght+']').attr('id', 'adress['+$fieldLenght+']').val('').removeClass('filled')
+       $($field).find('label').attr('for', 'adress['+$fieldLenght+']')
+       $field.appendTo($wher)
+     });
+
+     $('.add-con').on('click', function(event) {
+       event.preventDefault();
+       $wher = $(this).parent().find('.form-block__append')
+       $fieldLenght = $(this).parent().find('.form-block').length + 1
+       $field = $(this).parent().find('.form-block').eq(0).clone()
+       $($field).find('input').attr('name', 'contact['+$fieldLenght+']').attr('id', 'contact['+$fieldLenght+']').val('').removeClass('filled')
+       $($field).find('label').attr('for', 'contact['+$fieldLenght+']')
+       $field.appendTo($wher)
+     });
+
+     $('body').on('click', '.field-type__list li', function(event) {
+       event.preventDefault();
+       $(this).addClass('active').siblings().removeClass('active')
+       $thisSvg = $(this).find('.field-type__svg svg').clone()
+       $thisType = $(this).attr('data-type')
+       $thisLabel = $(this).find('.field-type__text').text()
+       $selected = $(this).parents('.field-type').find('.selected-svg')
+       $selected.find('svg').remove()
+       $selected.append($thisSvg)
+       $selectedLabel = $(this).parents('.form-block').find('label').text($thisLabel)
+       $selectedType = $(this).parents('.form-block').find('input')
+       $selectedType.attr('type', $thisType)
+       if ($thisType == 'tel') {
+        $selectedType.addClass('phone').attr('maxlength', '19');
+      } else {
+        $selectedType.removeClass('phone').attr('maxlength', '80');
+      }
+      $('.field-type__selected').removeClass('active')
+      $(this).parent().slideUp()
+       
+       // console.log($selectedType)
 
 
      });
