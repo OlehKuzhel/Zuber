@@ -6012,6 +6012,8 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 
 .breabcrumbs .link + .link:before { position: absolute; top: 0; left: 0; content: '/'; font-family: "Open Sans"; font-weight: 700; font-size: 1.6rem; color: #8296A5; }
 
+.section-mobile { display: none; }
+
 .section-header { background: #1B65B9; position: fixed; z-index: 10; top: 0; left: 0; width: 100%; }
 
 .section-header .header { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; height: 6rem; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
