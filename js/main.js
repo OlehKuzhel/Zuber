@@ -42,6 +42,16 @@ $(document).ready(function($) {
     }
   });
 
+  $('.phone').mask('+38 (000) 000-00-00').focus(function(event) {
+        if ($(this).val() == '') {
+            $(this).val('+38 (0')
+        }
+    }).blur(function(event) {
+        if ($(this).val() == '+38 (0') {
+            $(this).val('')
+        }
+    });
+
   $('.review-star').on('click',  function(event) {
     event.preventDefault();
     $Sclass = $(this).data('star')
@@ -151,6 +161,18 @@ $(document).ready(function($) {
      $('.link--top').click(function(){
        $("html, body").animate({ scrollTop: 0 }, 600);
        return false;
+     });
+
+     $('.form').on('click', '.field-type__selected', function(event) {
+       event.preventDefault();
+       $('.field-type__selected').not(this).removeClass('active')
+       $(this).toggleClass('active');
+
+      $list = $(this).parent().find('.field-type__list')
+      $('.field-type__list').not($list).slideUp()
+      $list.slideToggle()
+
+
      });
 
   //   var sliderB = new Swiper('.get-items', {
@@ -332,6 +354,25 @@ if (isMobile == false) {
 
 
    }
+
+
+   var inputs = document.querySelectorAll('.inputfile');
+Array.prototype.forEach.call(inputs, function(input){
+  var label  = input.nextElementSibling,
+      labelVal = label.innerHTML;
+  input.addEventListener('change', function(e){
+    var fileName = '';
+    if( this.files && this.files.length > 1 )
+      fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+    else
+      fileName = e.target.value.split( '\\' ).pop();
+    console.log(e)
+    if( fileName )
+      label.querySelector( '.paragraph' ).innerHTML = fileName;
+    else
+      label.innerHTML = labelVal;
+  });
+});
  
     
 });
