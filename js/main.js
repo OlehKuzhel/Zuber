@@ -184,8 +184,9 @@ $(document).ready(function($) {
        $wher = $(this).parent().find('.form-block__append')
        $fieldLenght = $(this).parent().find('.form-block').length + 1
        $field = $(this).parent().find('.form-block').eq(0).clone()
-       $($field).find('input').attr('name', 'adress['+$fieldLenght+']').attr('id', 'adress['+$fieldLenght+']').val('').removeClass('filled')
-       $($field).find('label').attr('for', 'adress['+$fieldLenght+']')
+       $oldName = $($field).find('input').attr('name').replace(/[^a-z_]/g, '')
+       $($field).find('input').attr('name', $oldName+$fieldLenght).attr('id', $oldName+$fieldLenght).val('').removeClass('filled')
+       $($field).find('label').attr('for', $oldName+$fieldLenght)
        $field.appendTo($wher)
      });
 
@@ -194,8 +195,9 @@ $(document).ready(function($) {
        $wher = $(this).parent().find('.form-block__append')
        $fieldLenght = $(this).parent().find('.form-block').length + 1
        $field = $(this).parent().find('.form-block').eq(0).clone()
-       $($field).find('input').attr('name', 'contact['+$fieldLenght+']').attr('id', 'contact['+$fieldLenght+']').val('').removeClass('filled')
-       $($field).find('label').attr('for', 'contact['+$fieldLenght+']')
+       $oldName = $($field).find('input').attr('name').replace(/[^a-z_]/g, '')
+       $($field).find('input').attr('name', $oldName+$fieldLenght).attr('id', $oldName+$fieldLenght).val('').removeClass('filled')
+       $($field).find('label').attr('for', $oldName+$fieldLenght)
        $field.appendTo($wher)
      });
 
