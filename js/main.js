@@ -178,7 +178,11 @@ $(document).ready(function($) {
 
 
      });
-
+     if ($('.reg-form').length) {
+      $idPlace = $('.reg-form').find('.field--place').attr('id')
+         new google.maps.places.Autocomplete((document.getElementById($idPlace)), {types: ['geocode'],});
+     }
+    
      $('.add-adr').on('click', function(event) {
        event.preventDefault();
        $wher = $(this).parent().find('.form-block__append')
@@ -188,6 +192,10 @@ $(document).ready(function($) {
        $($field).find('input').attr('name', $oldName+'['+$fieldLenght+']').attr('id', $oldName+'_'+$fieldLenght).val('').removeClass('filled')
        $($field).find('label').attr('for', $oldName+'_'+$fieldLenght)
        $field.appendTo($wher)
+
+       new google.maps.places.Autocomplete((document.getElementById($oldName+'_'+$fieldLenght)), {types: ['geocode'],});
+
+
      });
 
      $('.add-con').on('click', function(event) {
@@ -195,10 +203,11 @@ $(document).ready(function($) {
        $wher = $(this).parent().find('.form-block__append')
        $fieldLenght = $(this).parent().find('.form-block').length + 1
        $field = $(this).parent().find('.form-block').eq(0).clone()
-       $oldName = $($field).find('input').attr('name').replace(/[^a-z_]/g, '')
-       $($field).find('input').attr('name', $oldName+'['+$fieldLenght+']').attr('id', $oldName+'_'+$fieldLenght).val('').removeClass('filled')
-       $($field).find('label').attr('for', $oldName+'_'+$fieldLenght)
+       // $oldName = $($field).find('input').attr('name').replace(/[^a-z_]/g, '')
+       $($field).find('input').attr('name', 'contact['+$fieldLenght+'][phone]').attr('id', 'contact['+$fieldLenght+']').val('').removeClass('filled')
+       $($field).find('label').attr('for', 'contact['+$fieldLenght+']')
        $field.appendTo($wher)
+       // console.log($oldName)
      });
 
      $('body').on('click', '.field-type__list li', function(event) {
@@ -206,6 +215,7 @@ $(document).ready(function($) {
        $(this).addClass('active').siblings().removeClass('active')
        $thisSvg = $(this).find('.field-type__svg svg').clone()
        $thisType = $(this).attr('data-type')
+       $thisName = $(this).attr('data-name')
        $thisLabel = $(this).find('.field-type__text').text()
        $selected = $(this).parents('.field-type').find('.selected-svg')
        $selected.find('svg').remove()
@@ -213,6 +223,8 @@ $(document).ready(function($) {
        $selectedLabel = $(this).parents('.form-block').find('label').text($thisLabel)
        $selectedType = $(this).parents('.form-block').find('input')
        $selectedType.attr('type', $thisType)
+       $selectedTypeId = $selectedType.attr('id')
+       $selectedType.attr('name', $selectedTypeId+'['+$thisName+']')
        if ($thisType == 'tel') {
         $selectedType.addClass('phone').attr('maxlength', '19');
       } else {
@@ -424,6 +436,19 @@ Array.prototype.forEach.call(inputs, function(input){
       label.innerHTML = labelVal;
   });
 });
+
+// var searchInput = 'adress_ru_1';
+// var autocomplete;
+    
+  
+    // google.maps.event.addListener(autocomplete, 'place_changed', function () {
+    //     var near_place = autocomplete.getPlace();
+    //     document.getElementById('loc_lat').value = near_place.geometry.location.lat();
+    //     document.getElementById('loc_long').value = near_place.geometry.location.lng();
+    
+    //     document.getElementById('latitude_view').innerHTML = near_place.geometry.location.lat();
+    //     document.getElementById('longitude_view').innerHTML = near_place.geometry.location.lng();
+    // });
  
     
 });

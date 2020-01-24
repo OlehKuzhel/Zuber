@@ -6524,6 +6524,16 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 
 .reg-form .form-block__phone .form-block__append .form-block { max-width: 38.5rem; width: 100%; margin-bottom: 3rem; }
 
+.reg-form .form-block__phone .form-block__append .form-block:nth-child(2) .field-type { width: 3rem; }
+
+.reg-form .form-block__phone .form-block__append .form-block:nth-child(2) .field-type__selected { pointer-events: none; }
+
+.reg-form .form-block__phone .form-block__append .form-block:nth-child(2) .selected-svg { width: 100%; }
+
+.reg-form .form-block__phone .form-block__append .form-block:nth-child(2) .field { padding-left: 3.5rem; }
+
+.reg-form .form-block__phone .form-block__append .form-block:nth-child(2) .field + label { left: 3.5rem; }
+
 .reg-form .form-block__phone .form-block__append .form-block + .form-block { margin-top: 0; }
 
 .field-type { position: absolute; top: 0; left: 0; z-index: 5; width: 4rem; height: 100%; }
