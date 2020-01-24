@@ -136,9 +136,7 @@ $(document).ready(function($) {
             789: {
                 simulateTouch: true,
                 spaceBetween: 30,
-                slidesPerView: 'auto',
-                slidesOffsetBefore: 30,
-                slidesOffsetAfter: 15,
+                slidesPerView: 1,
             },
         }
     });
