@@ -447,6 +447,20 @@ Array.prototype.forEach.call(inputs, function(input){
     //     document.getElementById('latitude_view').innerHTML = near_place.geometry.location.lat();
     //     document.getElementById('longitude_view').innerHTML = near_place.geometry.location.lng();
     // });
- 
+ $('.link--toggle').on('click', function(event) {
+   event.preventDefault();
+   $(this).toggleClass('active');
+   $('.section-mobile').toggleClass('open');
+   if($(this).hasClass('active')) {
+//     $('.section-mobile').find
+//     $('select').styler({
+//     onFormStyled: function() {
+//       $('.jq-selectbox__dropdown ul').mCustomScrollbar({
+//     theme:"dark"
+// });
+//     }
+//   });
+   }
+ });
     
 });
