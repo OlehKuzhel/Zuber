@@ -109,6 +109,7 @@ $(document).ready(function($) {
    
     $('.field--date').datepicker({
       minDate: new Date(),
+      autoClose: true,
       language: 'ua',
       offset: 0,
       minView: 'days',
@@ -170,9 +171,16 @@ $(document).ready(function($) {
        $('.field-type__selected').not(this).removeClass('active')
        $(this).toggleClass('active');
 
+      
+       
       $list = $(this).parent().find('.field-type__list')
       $('.field-type__list').not($list).slideUp()
+       $('.form-block').css('z-index', '5')
+       if ($(this).hasClass('active')) {
+        $(this).parents('.form-block').css('z-index', '7')
+       }
       $list.slideToggle()
+
 
 
      });
@@ -203,8 +211,10 @@ $(document).ready(function($) {
        $field = $(this).parent().find('.form-block').eq(0).clone()
        // $oldName = $($field).find('input').attr('name').replace(/[^a-z_]/g, '')
        $($field).find('input').attr('name', 'contact['+$fieldLenght+'][phone]').attr('id', 'contact['+$fieldLenght+']').val('').removeClass('filled')
+       
        $($field).find('label').attr('for', 'contact['+$fieldLenght+']')
        $field.appendTo($wher)
+
        // console.log($oldName)
      });
 
@@ -225,9 +235,12 @@ $(document).ready(function($) {
        $selectedType.attr('name', $selectedTypeId+'['+$thisName+']')
        if ($thisType == 'tel') {
         $selectedType.addClass('phone').attr('maxlength', '19');
+        $selectedType.mask('+38 (000) 000-00-00')
       } else {
         $selectedType.removeClass('phone').attr('maxlength', '80');
+        $selectedType.unmask();
       }
+       
       $('.field-type__selected').removeClass('active')
       $(this).parent().slideUp()
        
@@ -409,10 +422,29 @@ $('[name=langselect]').on('change',function(event) {
 //     });
 
 if (isMobile == false) {
-        
+          
 
    } else {
 
+     $('.form-page').prepend('<div class="form-page__mob"><h3 class="title title--h3 bl c2">Фільтри</h3><a class="link link--close"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#5B636A"/></svg></a></div>').wrap('<div class="form-overlay"></div>')
+     // $('.form-page').append('')
+      $formHtml = $('.form-overlay')
+      $formHtml.appendTo('body')
+
+$('body').on('click', '.btn--search', function(event) {
+  event.preventDefault();
+  $formHtml.addClass('open')
+});
+
+$('body').on('click', '.link--close', function(event) {
+  event.preventDefault();
+  $formHtml.removeClass('open')
+});
+
+// $('body').on('click', '.form-overlay', function(event) {
+//   event.preventDefault();
+//   $formHtml.removeClass('open')
+// });
 
    }
 
