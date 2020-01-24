@@ -239,7 +239,10 @@
   .form-page .form-block:last-child { margin-bottom: 0; }
   .form-page .form-rows { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
   .form-page .form-row { width: 100%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
-  .form-page .form-row + .form-row { margin-top: 5rem; } }
+  .form-page .form-row + .form-row { margin-top: 5rem; }
+  .popup-review { padding: 5rem 1.5rem 1.5rem 1.5rem; }
+  .popup-review .review-star__text { font-size: 1.4rem; }
+  .popup-review .review-star__hov { width: 1.5rem; height: 1.5rem; } }
 
 @media only screen and (max-width: 330px) { /**/
   html { font-size: 9px; } }
