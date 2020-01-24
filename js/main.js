@@ -184,7 +184,7 @@ $(document).ready(function($) {
 
 
      });
-     if ($('.reg-form').length) {
+     if ($('.form-reg:not(.form-login)').length) {
       $idPlace = $('.reg-form').find('.field--place').attr('id')
          new google.maps.places.Autocomplete((document.getElementById($idPlace)), {types: ['geocode'],});
      }
@@ -494,5 +494,12 @@ Array.prototype.forEach.call(inputs, function(input){
 //   });
    }
  });
+
+$('.btn--view').on('click', function(event) {
+  event.preventDefault();
+  $(this).toggleClass('active');
+  $('.record-text').toggleClass('active');
+});
+ // $('.record-text')
     
 });
