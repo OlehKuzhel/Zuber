@@ -185,8 +185,8 @@ $(document).ready(function($) {
        $fieldLenght = $(this).parent().find('.form-block').length + 1
        $field = $(this).parent().find('.form-block').eq(0).clone()
        $oldName = $($field).find('input').attr('name').replace(/[^a-z_]/g, '')
-       $($field).find('input').attr('name', $oldName+$fieldLenght).attr('id', $oldName+$fieldLenght).val('').removeClass('filled')
-       $($field).find('label').attr('for', $oldName+$fieldLenght)
+       $($field).find('input').attr('name', $oldName+'['+$fieldLenght+']').attr('id', $oldName+'_'+$fieldLenght).val('').removeClass('filled')
+       $($field).find('label').attr('for', $oldName+'_'+$fieldLenght)
        $field.appendTo($wher)
      });
 
@@ -196,8 +196,8 @@ $(document).ready(function($) {
        $fieldLenght = $(this).parent().find('.form-block').length + 1
        $field = $(this).parent().find('.form-block').eq(0).clone()
        $oldName = $($field).find('input').attr('name').replace(/[^a-z_]/g, '')
-       $($field).find('input').attr('name', $oldName+$fieldLenght).attr('id', $oldName+$fieldLenght).val('').removeClass('filled')
-       $($field).find('label').attr('for', $oldName+$fieldLenght)
+       $($field).find('input').attr('name', $oldName+'['+$fieldLenght+']').attr('id', $oldName+'_'+$fieldLenght).val('').removeClass('filled')
+       $($field).find('label').attr('for', $oldName+'_'+$fieldLenght)
        $field.appendTo($wher)
      });
 
