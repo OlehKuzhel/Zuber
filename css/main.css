@@ -6030,11 +6030,19 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 
 .section-header .header-side { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; height: 100%; }
 
-.section-header .header-city { height: 100%; width: 11.5rem; padding: 0 1.5rem; -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; }
+.section-header .header-city { height: 100%; width: 11.5rem; padding: 0 0; -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; }
+
+.section-header .header-city .jq-selectbox__select-text { padding: 0 1.5rem; }
+
+.section-header .header-city .jq-selectbox__trigger { right: 1.5rem; }
 
 .section-header .header-city:hover { background: rgba(255, 255, 255, 0.33); }
 
-.section-header .header-lang { height: 100%; width: 7.5rem; padding: 0 1.5rem; -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; }
+.section-header .header-lang { height: 100%; width: 7.5rem; padding: 0 0; -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; }
+
+.section-header .header-lang .jq-selectbox__select-text { padding: 0 1.5rem; }
+
+.section-header .header-lang .jq-selectbox__trigger { right: 1.5rem; }
 
 .section-header .header-lang:hover { background: rgba(255, 255, 255, 0.33); }
 
