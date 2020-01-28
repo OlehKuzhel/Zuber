@@ -426,7 +426,7 @@ if (isMobile == false) {
 
    } else {
 
-     $('.form-page').prepend('<div class="form-page__mob"><h3 class="title title--h3 bl c2">Фільтри</h3><a class="link link--close"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#5B636A"/></svg></a></div>').wrap('<div class="form-overlay"></div>')
+     $('.form-page:not(.form-visible)').prepend('<div class="form-page__mob"><h3 class="title title--h3 bl c2">Фільтри</h3><a class="link link--close"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#5B636A"/></svg></a></div>').wrap('<div class="form-overlay"></div>')
      // $('.form-page').append('')
       $formHtml = $('.form-overlay')
       $formHtml.appendTo('body')

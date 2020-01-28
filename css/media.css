@@ -187,9 +187,10 @@
   .section-faq .faq-item__head h3 { font-size: 1.8rem; }
   .section-faq .faq-item__content { padding-left: 0; }
   .section-faq .faq-item__content .paragraph { font-size: 1.6rem; line-height: 2.4rem; }
-  .section-doctorpage .doctorpage-info { padding-bottom: 3rem; }
-  .section-doctorpage .doctorpage-info__top { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-bottom: 1.5rem; }
-  .section-doctorpage .doctorpage-info__form { margin-left: 0; max-width: 100%; }
+  .section-doctorpage .doctorpage-info { padding-bottom: 3rem; width: 100%; }
+  .section-doctorpage .doctorpage-info__top { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-bottom: 1.5rem; width: 100%; max-width: 100%; }
+  .section-doctorpage .doctorpage-info__form { margin-left: 0; max-width: 100%; width: 100%; }
+  .section-doctorpage .doctorpage-info__form .find-form { max-width: 100%; }
   .section-doctorpage .doctorpage-info__credits { width: 100%; padding: 3rem 1.5rem 1.5rem 1.5rem; margin: 0 0 1.5rem 0; background: #fff; -webkit-border-radius: 8px; border-radius: 8px; }
   .section-doctorpage .doctorpage-info__bottom { width: 100%; padding: 3rem 1.5rem 1.5rem 1.5rem; margin: 0 0 0 0; background: #fff; -webkit-border-radius: 8px; border-radius: 8px; }
   .section-doctorpage .doctorpage-info__bottom .paragraph { font-size: 1.6rem; }
