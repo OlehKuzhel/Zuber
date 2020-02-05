@@ -5874,11 +5874,11 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 
 .select .jq-selectbox.focused .jq-selectbox__select { outline: none; border: none; border-bottom: 1px solid #1B65B9; }
 
-.select--eternal .jq-selectbox__dropdown { margin: 0; -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2); box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2); -webkit-border-radius: 0px 0px 8px 8px; border-radius: 0px 0px 8px 8px; background: #fff; border: none; }
+.select--eternal .jq-selectbox__dropdown { max-width: 100%; margin: 0; -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2); box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2); -webkit-border-radius: 0px 0px 8px 8px; border-radius: 0px 0px 8px 8px; background: #fff; border: none; }
 
 .select--eternal .jq-selectbox__dropdown ul { max-height: 20rem; padding: 1.5rem 0; }
 
-.select--eternal .jq-selectbox__dropdown li { padding: 1.5rem 2rem; font-size: 1.8rem; font-family: "Open Sans"; font-weight: 400; color: #5B636A; }
+.select--eternal .jq-selectbox__dropdown li { padding: 1.5rem 2rem; font-size: 1.8rem; font-family: "Open Sans"; white-space: normal; line-height: 1.5; font-weight: 400; color: #5B636A; }
 
 .select--eternal .jq-selectbox__dropdown li:last-child { padding-bottom: 0; }
 
