@@ -194,7 +194,7 @@
                            </div>
                            <div class="doctor-bottom__btns">
                               <a href="#" class="btn btn--more">Докладніше</a>
-                              <a href="#" class="btn btn--write">Записатися</a>
+                              <a href="#" data-doctorid="21" data-popup="#formreq" class="fancybtn btn btn--write">Записатися</a>
                            </div>
                         </div>
                      </div>
@@ -643,6 +643,72 @@
             </div>
          </div>
       </aside>
+
+
+        <div id="formreq" style="display:none" class="popup popup-formreq">
+         <div class="popup-side">
+            <div class="popup-content">
+      <div class="doctorpage-info__form">
+                      <div class="find-form">
+                        <p class="paragraph c6 big bl">Бронювання</p>
+                  <form action="any.php" class="form form-page form-visible">
+                     <input type="hidden" name="doctorId" value="">
+                     <div class="form-rows">
+                           
+                           <div class="form-block">
+                              <select class="select select--eternal" data-placeholder=" " name="what" id="what">
+                                 <option></option>
+                                 <option value="біль">Зубний біль</option>
+                                 <option value="біль">Зубний біль 2</option>
+                                 <option value="біль">Зубний біль 3</option>
+                              </select>
+                              <label for="what">Що турбує</label>
+                           </div>
+                           <div class="form-block">
+                              <input type="text" name="date" class="field field--date" id="date" readonly="readonly">
+                              <label for="date">Оберіть дату прийому</label>
+                           </div>
+                           <div class="form-block">
+                              <select class="select select--time" data-placeholder=" " name="time" id="time">
+                                 <option></option>
+                                 <option value="Ранок">Ранок</option>
+                                 <option value="Вечір">Вечір</option>
+                              </select>
+                              <label for="time">Коли зручно?</label>
+                        </div>
+                        <div class="form-block">
+                              <select class="select select--place" data-placeholder=" " name="place" id="place">
+                                 <option></option>
+                                 <option value="вулиця Антоновича, 14Б">вулиця Антоновича, 14Б</option>
+                                 <option value="вулиця Антоновича, 14Б">вулиця Антоновича, 14Б</option>
+                                 <option value="вулиця Антоновича, 14Б">вулиця Антоновича, 14Б</option>
+                                 <option value="вулиця Антоновича, 14Б">вулиця Антоновича, 14Б</option>
+                                 <option value="вулиця Антоновича, 14Б">вулиця Антоновича, 14Б</option>
+                                 <option value="вулиця Антоновича, 14Б">вулиця Антоновича, 14Б</option>
+                                 <option value="вулиця Антоновича, 14Б">вулиця Антоновича, 14Б</option>
+                                 <option value="вулиця Антоновича, 14Б">вулиця Антоновича, 14Б</option>
+                              </select>
+                              <label for="area">Місце прийому</label>
+                           </div>
+                           <div class="form-block">
+                        
+                        <input type="tel" name="phone" required class="field phone" id="phone">
+                        <label for="phone">Телефон</label>
+                     </div>
+                     <div class="form-block">
+                        
+                        <input type="text" name="email" class="field" id="email">
+                        <label for="email">Електронна пошта</label>
+                     </div>
+                     </div>
+                     <button type="submit" class="btn btn--evel btn--submit">Запис до лiкаря</button>
+                  </form>
+               </div>
+                  </div>
+</div>
+         </div>
+      </div>
+
       <script src=js/libs.min.js></script>
       <script src=js/main.js></script>
    </body>
