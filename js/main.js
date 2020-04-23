@@ -37,8 +37,13 @@ $(document).ready(function($) {
   $('select').styler({
     onFormStyled: function() {
       $('.jq-selectbox__dropdown ul').mCustomScrollbar({
-    theme:"dark"
-});
+          theme:"dark"
+      });
+    },
+    onSelectClosed: function() {
+      if ($(this).hasClass('select--city')) {
+        window.location.href = '/change-city/'+$(this).find('select').val()
+      }
     }
   });
 
@@ -501,5 +506,16 @@ $('.btn--view').on('click', function(event) {
   $('.record-text').toggleClass('active');
 });
  // $('.record-text')
+
+ $('.special').on('change', '.form-check .checkbox', function(event) {
+   event.preventDefault();
+   if($(this).prop('checked')){
+   // $('#submit').attr('disabled', false);
+   $(this).parent().find('.price--spec').fadeIn('fast');
+   }else{
+   $(this).parent().find('.price--spec').fadeOut('fast');
+ }
+   /* Act on the event */
+ });
     
 });

@@ -6038,7 +6038,7 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 
 .section-header .header-side { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; height: 100%; }
 
-.section-header .header-city { height: 100%; width: 11.5rem; padding: 0 0; -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; }
+.section-header .header-city { height: 100%; width: 14rem; padding: 0 0; -webkit-transition: 0.24s ease-in; -o-transition: 0.24s ease-in; transition: 0.24s ease-in; }
 
 .section-header .header-city .jq-selectbox__select-text { padding: 0 1.5rem; }
 
@@ -6073,6 +6073,10 @@ p { font-family: "Open Sans"; color: #000000; font-size: 1.8rem; font-weight: 40
 .section-reg .reg-form form { margin-top: 6.5rem; }
 
 .section-reg .reg-form .form-row.special .form-col { max-width: 38.5rem; width: 100%; }
+
+.section-reg .reg-form .form-row.special .form-check { min-height: 3rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+.section-reg .reg-form .form-row.special .form-check .price--spec { max-width: 10rem; font-size: 1.6rem; padding-top: 0; -webkit-transition: initial; -o-transition: initial; transition: initial; display: none; margin-top: 0; }
 
 .section-reg .reg-form .form-row + .form-row { margin-top: 0; }
 
