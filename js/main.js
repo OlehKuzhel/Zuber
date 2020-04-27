@@ -87,7 +87,28 @@ $(document).ready(function($) {
         touch: false,
         baseClass: "modal",
         beforeLoad: function(instance, slide) {
-        
+          if (popup == '#formreq') {
+            $.ajax({
+                type: "GET",
+                cache: false,
+                url: '/doctors/get-addresses/' + doctorId,
+                success: function(data) {
+                    $(popup).find('.select--place').find('option').remove()
+                    $(popup).find('.select--place').append('<option></option>'+data)
+                    $(popup).find('.select--place').trigger('refresh');
+
+                    // $.each($dataJson, function(index, el) {
+                    //     $balanceInp = $('[data-only_vin_id='+el.id+']').find('td.td-balance')
+                    //     $balanceInp.addClass('load')
+                    //     $balanceInp.find('input').val(el.balance)
+                    //     if (el.balance == 0) {
+                    //         $('[data-only_vin_id='+el.id+']').addClass('forestgreen')
+                    //     }
+                    // });
+                    
+                },
+            });
+          }
         },
         afterLoad: function(instance, current){
           
@@ -96,6 +117,10 @@ $(document).ready(function($) {
               if (popup == '#formreq') {
                 $(popup).find('input[name=doctorId]').val(doctorId)
                 $(popup).find('select').trigger('refresh');
+
+                $(popup).find('.jq-selectbox__dropdown ul').mCustomScrollbar({
+          theme:"dark"
+      });
               }
             },
         afterClose: function(instance, slide) {
@@ -523,15 +548,15 @@ $('.btn--view').on('click', function(event) {
 });
  // $('.record-text')
 
- $('.special').on('change', '.form-check .checkbox', function(event) {
-   event.preventDefault();
-   if($(this).prop('checked')){
-   // $('#submit').attr('disabled', false);
-   $(this).parent().find('.price--spec').fadeIn('fast');
-   }else{
-   $(this).parent().find('.price--spec').fadeOut('fast');
- }
-   /* Act on the event */
- });
+ // $('.special').on('change', '.form-check .checkbox', function(event) {
+ //   event.preventDefault();
+ //   if($(this).prop('checked')){
+ //   // $('#submit').attr('disabled', false);
+ //   // $(this).parent().find('.price--spec').fadeIn('fast');
+ //   }else{
+ //   // $(this).parent().find('.price--spec').fadeOut('fast');
+ // }
+ //   /* Act on the event */
+ // });
     
 });
