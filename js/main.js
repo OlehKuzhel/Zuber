@@ -275,23 +275,22 @@ $(document).ready(function($) {
        $selected.find('svg').remove()
        $selected.append($thisSvg)
        $selectedLabel = $(this).parents('.form-block').find('label').text($thisLabel)
-       $selectedType = $(this).parents('.form-block').find('input')
-       $selectedType.attr('type', $thisType)
+       $selectedType = $(this).parents('.form-block')
+       $selectedType.find('input').attr('type', $thisType)
        $selectedTypeId = $selectedType.attr('id')
-       $selectedType.attr('name', $selectedTypeId+'['+$thisName+']')
+       $selectedType.find('input').attr('name', $selectedTypeId+'['+$thisName+']')
        if ($thisType == 'tel') {
-        $selectedType.addClass('phone').attr('maxlength', '19');
-        $selectedType.mask('+38 (000) 000-00-00')
+        console.log($selectedType)
+        $selectedType.find('.field--mask').addClass('phone').attr('maxlength', '19');
+        $selectedType.find('.field--mask').mask('+38 (000) 000-00-00')
       } else {
-        $selectedType.removeClass('phone').attr('maxlength', '80');
-        $selectedType.unmask();
+        $selectedType.find('.field--mask').removeClass('phone').attr('maxlength', '80');
+        $selectedType.find('.field--mask').unmask();
       }
        
       $('.field-type__selected').removeClass('active')
       $(this).parent().slideUp()
        
-       // console.log($selectedType)
-
 
      });
 
